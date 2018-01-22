@@ -1,0 +1,31 @@
+group 'ru.spbu'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://jade.tilab.com/maven/"
+    }
+}
+
+dependencies {
+    compile group: 'com.tilab.jade', name: 'jade', version: '4.5.0'
+}
+group 'ru.spbu'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
